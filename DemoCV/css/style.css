@@ -1,38 +1,43 @@
 /* css for header */
 
 /* css for middle */
+/* css for service */
 #services{
     margin: 50px 0;
     background-color: #f0f0f0;
     font-family: sans-serif;
     padding: 60px 0;
 }
-
-.row{
-    color:#666666
-}
-.title{
+#services .title{
     text-align: center;
 }
-.title h2{
+#services .title h2{
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 30px;
 }
-.card{
-    text-align: center; 
+#services .container .row{
+    color:#666666
 }
-.card i{
+#services .container .row .card{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 4px;
+}
+#services .container .row .card i{
     font-size: 40px;
     margin: 25px 0 30px 0;
     color: #00b4d9;
 }
-.card-title{
+#services .container .row .card-body .card-title{
     font-weight: 600;
     margin-bottom: 20px;
 }
-.card-text{
+#services .container .row .card-body .card-text{
     margin-bottom: 50px !important;
+}
+#services .container .row .card:hover{
+    box-shadow: 0 0 30px rgba(48, 47,46, 0.25);
 }
 @media (min-width: 1400px) {
     .container{
@@ -47,4 +52,140 @@
         font-size: 15px;
     }
 }
+/* css for resume */
+#resume{
+    font-family: sans-serif;
+    color: #666666;
+}
+.timeline{
+    margin-right: 15px;
+}
+#resume .container .education{
+    position: relative;
+    border-left:2px solid #f0f0f0 ;
+    padding-right: 30px;
+}
+#resume .container .education .icon-edu{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#00b4d9;
+    position:absolute;
+    left: -26px;
+    top: -20px;
+    font-size: 20px; 
+} 
+#resume .container .education .icon-edu i{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+}
+#resume .container .education h3{  
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666666;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+#resume .container .education .timeline{
+    margin-left: 20px;
+}
+#resume .container .education .timeline .col{
+    background-color: #f2f2f2;
+    padding: 10px 20px 10px 10px ;
+    margin: 0 0 30px 0;
+}
+#resume .container .education .timeline .col:last-child{
+    margin-bottom: 0;
+}
+#resume .container .education .timeline .col h4{
+    font-weight: 700;
+}
+#resume .container .education .timeline .col h5{
+    font-size: 13px;
+    padding: 10px 0;
+}
+#resume .container .education .timeline .col p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+#resume .container .education .timeline .col::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #00b4d9;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    left: -5.5px;
+}
+
+/*  */
+#resume .container .experience{
+    position: relative;
+    border-left: 2px solid #f0f0f0 ;
+    padding-right: 30px;
+}
+#resume .container .experience .icon-exp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#00b4d9;
+    position:absolute;
+    left: -26px;
+    top: -20px;
+    font-size: 20px;
+} 
+#resume .container .experience .icon-exp i{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    color: white;
+}
+
+#resume .container .experience h3{
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666666;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+#resume .container .experience .timeline{
+    margin-left: 20px;
+}
+#resume .container .experience .timeline .col{
+    background-color: #f2f2f2;
+    padding: 10px 20px 10px 10px ;
+    margin: 0 0 30px 0;
+}
+#resume .container .experience .timeline .col:last-child{
+    margin-bottom: 0;
+}
+#resume .container .experience .timeline .col h4{
+    font-weight: 700;
+}
+#resume .container .experience .timeline .col h5{
+    font-size: 13px;
+    padding: 10px 0;
+}
+#resume .container .experience .timeline .col p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+#resume .container .experience .timeline .col::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #00b4d9;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    left: -5.5px;
+}
+
+
 /* css for footer */
