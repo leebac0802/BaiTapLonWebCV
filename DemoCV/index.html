@@ -21,6 +21,7 @@
 
 <body>
   <!-- header -->
+
   <!-- middle -->
 
   <!-- services -->
@@ -136,37 +137,92 @@
       </div>
       <div class="row">
         <div class="col controls">
-          <ul>
-            <li style="background-color: white;color: #00b4d9;">ALL</li>
-            <li>DESIGN</li>
-            <li>DEVELOPMENT</li>
-            <li>PRINT</li>
-          </ul>
+            <ul>
+              <button class="active-btn" data-filter="*" >ALL</button>
+              <button data-filter=".design">DESIGN</button>
+              <button data-filter=".development">DEVELOPMENT</button>
+              <button data-filter=".print">PRINT</button>
+            </ul>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-1.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="all development print" src="images/slide-1.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-2.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="design print" src="images/slide-2.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-4.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="development" src="images/slide-3.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-4.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="design development" src="images/slide-4.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-5.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="development" src="images/slide-5.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs">
-          <img src="images/slide-6.jpg" alt="">
+        <div class="col-sm-12 col-md-6 col-lg-4 slideImgs" style="display: inline-block;">
+          <img class="design print" src="images/slide-6.jpg" alt="">
+          <div class="hover">
+            <a href=""><div class="wrap eye">
+              <i class="far fa-eye"></i>
+            </div>
+            <div class="wrap link">
+              <i class="fas fa-link"></i>
+            </div></a>
+          </div>
         </div>
       </div>
   </div>
 
   <!-- footer -->
+<!-- library isotope and jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 
