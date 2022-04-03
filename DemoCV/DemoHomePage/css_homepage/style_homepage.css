@@ -1,255 +1,404 @@
-:root {
-    --Primary-color: #00b4d9;
+html{
+    scroll-behavior: smooth !important;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
-    font-family: sans-serif
+    
 }
-
-/* head */
-.head {
-    width: 100%;
-    height: 650px;
+/* css for header */
+#header {
     position: relative;
+    color: black;
+    
 }
-
-.overplay {
+#header .container-fluid {
+    padding: 0;
+    height: 100vh;
+}
+#header .overlay {
+    background-color: #fff;
+    opacity: 0.2;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
 }
-
-.background {
-    width: 100%;
-    height: 100%;
-}
-
-.background img {
+.container-fluid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-.title {
+.container-fluid .title {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 80px;
+    font-weight: 600;
+    
+}
+
+.container-fluid .sub-title {
     position: absolute;
     top: 30%;
-    left: 40%;
-    transform: translate(-40px, -40px);
-    font-size: 80px;
+    left: 47%;
+    transform: translate(-50px, -50px);
+    font-size: 60px;
+    font-weight: 600;
 }
 
-.sub-title {
+.container-fluid .member {
     position: absolute;
     top: 45%;
     left: 45%;
-    transform: translate(-55px, -55px);
-    font-size: 60px;
+    transform: translate(-50px, -50px);
+    font-size: 35px;
+    font-weight: 500;
 }
-
-.name {
+.container-fluid .btn {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #00b4d9;
     position: absolute;
-    top: 56%;
+    bottom: 10%;
     left: 47%;
     transform: translate(-50px, -50px);
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.btn-begin {
-    width: 200px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    background: var(--Primary-color);
-    position: absolute;
-    top: 76%;
-    left: 46%;
-    transform: translate(-50px, -50px);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-begin a {
-    display: block;
     text-decoration: none;
     color: #fff;
-    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
 }
 
-.btn-begin:hover {
+.container-fluid .btn:hover {
     background-color: #fff;
-    border: 2px solid var(--Primary-color);
-    color: var(--Primary-color);
-}
-
-.btn-begin:hover a {
-    color: var(--Primary-color);
-}
-
-/* CV */
-.body {
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.box {
-    margin: 60px 40px 60px 40px;
-    width: 222px;
-    background-color: #fff;
-    border: 2px solid var(--Primary-color);
-    padding: 30px;
-    border-radius: 10px;
-    transition: 0.6s;
-}
-
-.image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 20px 0 0 0;
-    margin: auto;
-    transform: translateY(50px);
+    border: 1px solid #00b4d9;
+    color: #00b4d9;
     transition: 0.5s;
 }
-
-.image img {
+/* css for middle */
+#middle .row {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 2px solid #000;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.btn-view {
-    border-radius: 6px;
-    background-color: var(--Primary-color);
-    border: none;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 50px 20px 20px 20px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.btn-view a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    outline: none;
-    color: #000;
-}
-
-.box:hover .image {
-    transform: translateY(0);
-}
-
-.box:hover .btn-view {
-    opacity: 1;
-    transform: translateY(0);
-    background-color: #fff;
-}
-
-.box:hover {
-    background-color: var(--Primary-color);
-}
-
-/* Contact */
-.contact {
-    min-height: 500px;
-    background-color: var(--Primary-color);
-}
-
-.contact-form {
+#middle .col-12 {
     text-align: center;
 }
 
-.form-heading {
-    color: #6f6f6f;
-    margin: 20px;
-    padding: 20px;
+#middle .cv {
+    width: 250px;
+    height: 300px;
+    border: 3px solid #00b4d9;
+    border-radius: 6px;
+    margin: auto;
+    transition: 0.5s;
+}
+#middle .cv p{
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+#middle .cv:hover p{
+    transform: translateY(-50px);
+}
+#middle .cv .cv-image {
+    padding-top: 50%;
+    transform: translateY(-50px);
 }
 
-.wrapper-input {
+#middle .cv-image img {
+    border-radius: 50%;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.cv .btn{
+    background: #00b4d9;
+    width: 150px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+
+.col-12 .cv:hover {
+    background-color: #00b4d9;
+}
+
+#middle .col-12 .cv:hover .cv-image img {
+    transform: translateY(-35px);
+}
+
+#middle .col-12 .cv:hover .btn {
+    transform: translateY(-35px);
+    opacity: 1;
+    background-color: #fff;
+    color: #000;
+    visibility: unset;
+}
+
+#middle .row:last-child {
+    background-color: #00b4d9;
+    text-align: center;
+}
+
+/* css for contact */
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding: 40px 0 0 0px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background-color: #00b4d9;
+    text-align: center;
+}
+
+.contact-body {
+    max-width: 100%;
+}
+
+.wrap-form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.input-name,
-.input-email {
-    width: 250px;
-    margin: 15px;
+.wrapper {
+    display: block;
 }
 
-.input-name input,
-.input-email input {
+.name {
+    max-width: 300px;
+    margin: 0 10px 10px 0;
+}
+
+.email {
+    max-width: 300px;
+    margin: 0 0 10px 10px;
+}
+
+.name input, 
+.email input,
+.subject input,
+.mess input {
     width: 100%;
-    height: 100%;
     text-decoration: none;
-    outline: #000;
+    outline: none;
     border: none;
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 5px 20px;
 }
 
-.input-subject {
-    width: 530px;
-    margin: auto;
-    padding: 0 0 15px 0;
-}
-
-.input-subject input, 
-.input-mess input{
-    width: 100%;
-    height: 100%;
-    padding: 10px 20px;
-    outline: #000;
-    border: none;
-    font-size: 15px;
-}
-
-.input-mess {
-    width: 530px;
-    margin: auto;
-}
-
-.input-mess input {
-    padding-bottom: 100px;
-    word-wrap: break-word;
+.subject, .mess {
+    max-width: 490px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .btn-send {
-    margin: 20px 410px;
+    display: inline-block;
+    width: 200px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 auto;
     padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    background-color: #fff;
-    border-radius: 8px;
-    color: var(--Primary-color);
-    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.btn-send a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 .btn-send:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+/* css for footer */
+#footer {
+    height: 100px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#footer ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+#footer ul li{
+    font-size: 20px;
+    margin: 0 10px;
+    list-style: none;
+}
+#footer ul li:hover {
+    color: #00b4d9;
+    cursor: pointer;
+}
+/* css responsive */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container-fluid .title {
+        top: 10%;
+        left: 38%;
+    }
+    .container-fluid .sub-title {
+        top: 35%;
+    }
+    .container-fluid .member {
+        top: 50%;
+    }
+    .container-fluid .btn{
+        bottom: 1%;
+    }
+
 }
 
-/* footer */
-.footer {
-    height: 150px;
-    background-color: #000;
+@media screen and (min-width: 768px) and (max-width: 811px) {
+    .container-fluid .title {
+        top: 10%;
+        font-size: 50px;
+    }
+    .container-fluid .sub-title {
+        top: 30%;
+        left: 50%;
+        font-size: 45px;
+    }
+    .container-fluid .member {
+        top: 50%;
+        left: 40%;
+    }
+    .container-fluid .btn {
+        left: 43%;
+        bottom: 1%;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .wrap-form {
+        flex-direction: column;
+    }
+    .name {
+        margin-right: -8px;
+        width: 80%;
+    }
+    .email {
+        width: 80%;
+    }
+    .subject {
+        transform: translateX(5px);
+        width: 300px;
+    }
+    .mess {
+        transform: translateX(5px);
+        width: 300px;
+    }
+    .container-fluid .title {
+        top: 10%;
+        left: 30%;
+        font-size: 50px;
+    }
+    .container-fluid .sub-title {
+        top: 30%;
+        left: 45%;
+        font-size: 45px;
+    }
+    .container-fluid .member {
+        top: 45%;
+        left: 40%;
+    }
+    .container-fluid .btn {
+        left: 43%;
+        
+    }
+    
+}
+@media screen and (max-width: 654px) {
+    .container-fluid .title {
+        
+        font-size: 50px;
+    
+    }
+    .container-fluid .sub-title {
+        
+        font-size: 45px;
+    }
+    .container-fluid .member {
+        margin-top: 30px;
+    }
+    .container-fluid .member p{
+        margin: 0;
+    }
+    .container-fluid .btn {
+        bottom: 0;
+        
+    }
+}
+@media screen and (max-width: 375px){
+    
+    .container-fluid .title {
+        top: 5%;
+        font-size: 35px;
+    }
+    .container-fluid .sub-title {
+        top: 25%;
+        left: 40%;
+        font-size: 35px;
+    }
+    .container-fluid .member {
+        top: 40%;
+        left: 40%;
+        font-size: 25px;
+    }
+    .container-fluid .btn {
+        bottom: 0;
+        left: 36%;
+    }
+    #header {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 328px) and (max-width: 500px) {
+    .container-fluid .title {
+        top: 10%;
+        left: 27%;
+        font-size: 35px;
+    }
+    .container-fluid .sub-title {
+        top: 30%;
+        left: 45%;
+        font-size: 35px;
+    }
+    .container-fluid .member {
+        top: 40%;
+        left: 40%;
+        font-size: 25px;
+    }
+    .container-fluid .btn {
+        bottom: 0;
+        left: 36%;
+    }
+    #header {
+        height: 60vh;
+    }
+    #header img{
+        height: 60vh;
+    }
+}
+

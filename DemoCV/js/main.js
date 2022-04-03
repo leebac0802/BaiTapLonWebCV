@@ -1,19 +1,19 @@
 // alert('hello')
 $(document).ready(function () {
-    $(".slideImgs").isotope({
+    $(".slidesWrapper").isotope({
     // options
     itemSelector: "img",
     layoutMode: "fitRows",
 });
     const wimg = $("img").width();
-    $(".slideImgs").forEach((val) => {
+    $(".slidesWrapper").forEach((val) => {
       val.css("height", `${wing}px`)
 });
-    slideImgs
+    item
 })
 $(".controls").on("click", "button",function(){
     const filter = $(this).data("filter")
-    $(".slideImgs").isotope({ filter })
+    $(".slidesWrapper").isotope({ filter })
     $("button").removeClass()
     $(this).addClass("active-btn")
 })
