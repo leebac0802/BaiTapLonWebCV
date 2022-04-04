@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link font awesome -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
@@ -62,38 +68,41 @@
     </div>
     <div class="container contact-container">
       <div class="main-contact">
-        <div class="row g-2 contact-form">
+        <div class="col" id="contact-form">
           <h3>CONTACT FORM</h3>
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Name"
-              style="height: 40px"
-            />
+          <div style="display: flex">
+            <div class="form-group" id="box-name">
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                style="height: 40px"
+              />
+              <span class="form-message"></span>
+            </div>
+            <div class="form-group" id="box-email">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                style="height: 40px"
+              />
+              <span class="form-message"></span>
+            </div>
           </div>
-          <div class="col">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              style="height: 40px"
-            />
+          <div class="col-md-6 form-group">
+            <input id="subject" placeholder="Subject" style="height: 40px" />
+            <span class="form-message"></span>
           </div>
-          <div class="col-3md">
-            <input
-              class="form-control"
-              placeholder="Subject"
-              style="height: 40px"
-            />
+          <div class="col-md-6 form-group">
+            <textarea
+              id="exampleFormControlTextarea1 your-message"
+              placeholder="Your Message"
+              rows="8"
+              style="margin-left: 10px; margin-right: 5px; padding-top: 5px"
+            ></textarea>
+            <span class="form-message"></span>
           </div>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            placeholder="Your Message"
-            rows="6"
-            style="margin-left: 10px; margin-right: 5px"
-          ></textarea>
           <div class="send-message">
             <button id="send-message" type="submit" class="btn btn-primary">
               SEND MESSAGE

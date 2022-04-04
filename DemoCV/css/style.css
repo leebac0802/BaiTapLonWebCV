@@ -4,7 +4,8 @@
 
 /* css for footer */
 body {
-  font-family: sans-serif;
+  font-family: Source Sans Pro;
+  font-size: 1rem;
 }
 .intro {
   background-image: url(../images/background.jpg);
@@ -58,34 +59,69 @@ body {
   display: flex;
   justify-content: center;
 }
-.contact-form {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-.form-control {
-  margin: 0.5rem 0;
-  border-radius: 0;
-}
-.contact-form button {
-  background-color: #00b4d9;
-  width: 10rem;
-  border: none;
-  height: 3rem;
+#contact-form {
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 .contact-container h3 {
   width: 100%;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #212529;
+  color: inherit;
+  margin-bottom: 2rem;
+  margin-left: 10px;
+  line-height: 1;
 }
+.form-group {
+  width: 100%;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+
+}
+.form-group input {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 5px;
+  border: 0.2px solid #6666
+}
+.form-group textarea {
+  width: 100%;
+  border: 0.2px solid #6666
+}
+#box-name {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+#box-email {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 15px;
+  
+}
+.send-message {
+  margin-left: 10px;
+}
+.form-message {
+  padding: 10px;
+  color: #d9534f;
+  font-size: 1rem;
+  position: relative;
+  top: 1rem;
+}
+#send-message {
+  background-color: #00b4d9;
+  width: 10rem;
+  border: none;
+  height: 3rem;
+  font-size: 0.9rem;
+}
+
+
 .contact-address {
   width: 50%;
-  padding: 1rem;
-}
-.contact-address h3 {
-  margin-bottom: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .main-address {
@@ -127,7 +163,7 @@ body {
   width: 100%;
 }
 .map {
-  margin-top: 1rem;
+  margin-top: 2rem;
   box-sizing: border-box;
   height: 30rem;
   width: 100%;
