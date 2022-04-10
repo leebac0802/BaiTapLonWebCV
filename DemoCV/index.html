@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
-    <header id="header-wrap">
+    <!-- header -->
+    <div id="header-wrap">
         <div class="menu-wrap">
             <div class="menu navbar">
                 <div class="menu-list navbar-collapse">
@@ -57,36 +59,14 @@
                     <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                         <li class="nav-item" id="open-button">
                             <a class="nav-link">
-                                <i class="icon-menu"></i>
+                                <i onclick="Menu()" style="cursor: pointer;" class="icon-menu"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <ul class="mobile-menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="#resume">resume</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-
         </nav>
-
+        
 
         <div id="hero-area">
             <div class="overlay"></div>
@@ -98,6 +78,7 @@
                 <li><span></span></li>
                 <li><span></span></li>
             </ul>
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-center">
@@ -132,7 +113,6 @@
 
     </header>
 
-
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
@@ -166,64 +146,52 @@
     </section>
 
 
-    <section id="services" class="services section-padding">
-        <h2 class="section-title flipInX">What I do</h2>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-lg-3 col-xs-12">
-                    <div class="services-item fadeInDown">
-                        <div class="icon">
-                            <i class="icon-grid"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="#">Front-end Development</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-                        </div>
-                    </div>
+    <div class="disappears" id="menu" style="position: fixed; z-index: 1050; top: 0; right: 0;bottom: 0;" >
+        <div class="close-menu" onclick="Close()"><i style="font-size: 30px; padding: 10px; cursor: pointer; color: #00b4d9;" class="fa-solid fa-xmark"></i></div>
+        <div id="menu-list">
+        <ul class="mobile-menu">
+            <li >
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#home" >Home</a>
                 </div>
-
-                <div class="col-md-6 col-lg-3 col-xs-12">
-                    <div class="services-item fadeInDown">
-                        <div class="icon">
-                            <i class="icon-layers"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="#">Graphic Design</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-                        </div>
-                    </div>
+            </li>
+            <li>
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#about" >About</a>
                 </div>
-
-                <div class="col-md-6 col-lg-3 col-xs-12">
-                    <div class="services-item fadeInDown">
-                        <div class="icon">
-                            <i class="icon-briefcase"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="#">Business Branding</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-                        </div>
-                    </div>
+                
+            </li >
+            <li>
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#services" >Services</a>
                 </div>
-
-                <div class="col-md-6 col-lg-3 col-xs-12">
-                    <div class="services-item fadeInDown">
-                        <div class="icon">
-                            <i class="icon-bubbles"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="#">Consultancy</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-                        </div>
-                    </div>
+                
+            </li >
+            <li>
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#resume" >Resume</a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- middle -->
+                
+            </li>
+            <li>
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#portfolio" >Work</a>
+                </div>
+                
+            </li>
+            <li >
+                <div class="list-menu">
+                    <a style="color: rgb(88, 66, 66);" href="#contact" > Contact</a>
+                </div>
+            </li>
+        </ul>
+</div>
+</div>
+<!-- middle -->
     
-    <!-- footer -->
+<!-- footer -->
     <script src="js/main.js"></script>
+
+
 </body>
 </html>

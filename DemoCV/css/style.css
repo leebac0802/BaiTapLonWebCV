@@ -8,13 +8,9 @@ body{
     background:#fff;
     font-size:14px;
     font-weight:400;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
     box-sizing:border-box;
-    -webkit-font-smoothing:subpixel-antialiased;
     color:#666;
     line-height:25px;
-    -webkit-backface-visibility:hidden;
     backface-visibility:hidden;
     overflow-x:hidden;
 }
@@ -25,6 +21,21 @@ body{
     top:0;
     left:0;
     z-index:0;
+    background-image: url(https://p0.pikist.com/photos/489/757/macbook-laptop-computer-bed-sheets-technology-shop-working-editing-night-d-ark.jpg);
+    background-size: cover;
+    animation: hea;
+    animation-duration: 30s;
+}
+@keyframes hea {
+    0%{
+        background-image: url(https://p0.pikist.com/photos/489/757/macbook-laptop-computer-bed-sheets-technology-shop-working-editing-night-d-ark.jpg);
+    }
+    50%{
+        background-image: url(http://figarigroup.com/wp-content/uploads/2018/04/annie-spratt-604131-unsplash-1024x702.jpg);
+    }
+    100%{
+        background-image: url(https://cdn.tgdd.vn/Files/2016/03/30/809924/c5-760x367.jpg);
+    }
 }
 .cb-slideshow li span{
     width:100%;
@@ -43,13 +54,7 @@ h1,h2,h3,h4{
     font-weight:700;
 }
 .script-font{
-    font-family:shadows into light,cursive;
-}
-a{
-    -webkit-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -o-transition:all .2s linear;
-    transition:all .2s linear;
+    font-family:cursive;
 }
 a:hover{
     text-decoration:none;
@@ -60,7 +65,8 @@ a a:focus{
 p{
     font-weight:400;
     font-family:source sans pro,sans-serif;
-    margin:0;font-size:14px;
+    margin:0;
+    font-size:14px;
 }
 ul,ol{
     list-style:outside none none;
@@ -117,6 +123,7 @@ ul li,ol li{
     text-align:center;
     font-size:16px;
     margin:15px 6px 12px;
+    border-radius: 50%;
 }
 
 .social-icon li a:hover{
@@ -171,15 +178,34 @@ ul li,ol li{
     background:#fff!important;
 }
 .navbar-expand-lg .navbar-nav .nav-link i{
-    font-size:28px;
+    font-size: 28px;
     color:#00b4d9;
 }
 @media(min-width:768px) and (max-width:991px){#nav-main li a.nav-link{padding-top:18px}}
 .navbar-toggler{
     display:none;
 }
+#menu{
+    background-color: #fff;
+    width: 20%;
+}
 .mobile-menu{
-    display:none;
+    margin-left: 20px;
+    font-size: 16.1px;
+}
+.list-menu{
+    padding: 13px 0 13px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+.list-menu-a:hover{
+    color: #00b4d9;
+}
+.disappears{
+    display: none;
+}
+.close-menu:hover{
+    opacity: 0.5;
+    color: #00b4d9;
 }
 .slicknav_menu{
     display:none;
@@ -256,41 +282,6 @@ ul li,ol li{
 }
 #hero-area .banner_bottom_btn i:hover{
     color:#ddd;
-}
-.services{
-    background:#f0f0f0;
-}
-.services-item{
-    background:#fff;
-    border-radius:4px;
-    padding:48px 20px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-    text-align:center;
-}
-.services-item .icon i{
-    font-size:42px;
-    margin-bottom:15px;
-    text-align:center;
-    width:48px;
-    display:block;
-    margin:0 auto;
-    height:48px;
-    color:#00b4d9;
-}
-.services-item .services-content h3{
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.services-item .services-content h3 a{
-    font-size:18px;
-    text-transform:uppercase;
-    color:#666;
-}
-.services-item .services-content h3 a:hover{
-    color:#00b4d9;
-}
-.services-item .services-content p{
-    line-height:22px;
 }
 .menu-wrap a{
     color: #b8b7ad;
@@ -376,7 +367,6 @@ ul li,ol li{
 .show-menu .menu-list a{
     transform:translate3d(0,0,0);
 }
-
 /* css for middle */
 
 /* css for footer */
