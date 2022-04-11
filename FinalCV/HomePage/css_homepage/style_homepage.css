@@ -102,11 +102,14 @@ html{
     font-size: 20px;
     transition: all 0.5s ease;
 }
+#middle .cv:hover span{
+    opacity: 0;
+}
 #middle .cv:hover p{
     transform: translateY(-50px);
 }
 #middle .cv .cv-image {
-    padding-top: 50%;
+    padding-top: 20%;
     transform: translateY(-50px);
 }
 
