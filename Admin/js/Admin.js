@@ -1,13 +1,15 @@
 var std = {
 	"username": "dieptv",
 	"fullname": "Tran Van A",
-	"email": "a@gmail.com"
+	"pass": "dieptv"
+
 }
 
 var stdJson = `{
 		"username": "dieptv",
 		"fullname": "Tran Van A",
-		"email": "a@gmail.com"
+		"pass": "dieptv"
+
 	}`;
 
 var arr = [1, 5, 2, 10]
@@ -17,15 +19,18 @@ var stdList = [
 	{
 		"username": "dieptv",
 		"fullname": "Tran Van A",
-		"email": "a@gmail.com"
+		"pass": "dieptv"
+
 	}, {
 		"username": "dieptv",
 		"fullname": "Tran Van A",
-		"email": "a@gmail.com"
+		"pass": "dieptv"
+
 	}, {
 		"username": "dieptv",
 		"fullname": "Tran Van A",
-		"email": "a@gmail.com"
+		"pass": "dieptv"
+
 	}
 ]
 
@@ -33,18 +38,21 @@ var stdListJson = `[
 		{
 			"username": "dieptv",
 			"fullname": "Tran Van A",
-			"email": "a@gmail.com"
+			"pass": "dieptv"
+
 		}, {
 			"username": "dieptv",
 			"fullname": "Tran Van A",
-			"email": "a@gmail.com"
+			"pass": "dieptv"
+
 		}, {
 			"username": "dieptv",
 			"fullname": "Tran Van A",
-			"email": "a@gmail.com"
+			"pass": "dieptv"
+
 		}
 	]`
-var stdListMinifyJson = '[{"username":"dieptv","fullname":"Tran Van A","email":"a@gmail.com"},{"username":"dieptv","fullname":"Tran Van A","email":"a@gmail.com"},{"username":"dieptv","fullname":"Tran Van A","email":"a@gmail.com"}]'
+var stdListMinifyJson = '[{"username":"dieptv","fullname":"Tran Van A","pass": "dieptv"},{"username":"dieptv","fullname":"Tran Van A","pass": "dieptv"},{"username":"dieptv","fullname":"Tran Van A","pass": "dieptv"}]'
 
 
 var json = JSON.stringify(stdList)
@@ -56,17 +64,17 @@ console.log(arr)
 function saveLocalStorage() {
 	var username = document.getElementById('username_id').value
 	var fullname = document.getElementById('fullname_id').value
-	var email = document.getElementById('email_id').value
+	var pass = document.getElementById('pass_id').value
 
 	localStorage.setItem('username', username)
 	localStorage.setItem('fullname', fullname)
-	localStorage.setItem('email', email)
+	localStorage.setItem('pass', pass)
 }
 
 function readLocalStorage() {
 	document.getElementById('username_id').value = localStorage.getItem('username')
 	document.getElementById('fullname_id').value = localStorage.getItem('fullname')
-	document.getElementById('email_id').value = localStorage.getItem('email')
+	document.getElementById('pass_id').value = localStorage.getItem('pass')
 }
 
 
@@ -77,12 +85,12 @@ var studentList = []
 function saveData() {
 	var username = document.getElementById('username_id').value
 	var fullname = document.getElementById('fullname_id').value
-	var email = document.getElementById('email_id').value
+	var pass = document.getElementById('pass_id').value
 
 	var std = {
 		'username': username,
 		'fullname': fullname,
-		'email': email
+		'pass': pass
 	}
 
 	if (cIndex >= 0) {
@@ -106,7 +114,7 @@ function showData() {
 				<td>${index + 1}</td>
 				<td>${std.username}</td>
 				<td>${std.fullname}</td>
-				<td>${std.email}</td>
+				<td>${std.pass}</td>
 				<td>
 					<button onclick="editStudent(${index})">Sua</button>
 					<button onclick="removeStudent(${index})">Xoa</button>
@@ -122,7 +130,7 @@ function editStudent(index) {
 
 	document.getElementById('username_id').value = studentList[index].username
 	document.getElementById('fullname_id').value = studentList[index].fullname
-	document.getElementById('email_id').value = studentList[index].email
+	document.getElementById('pass_id').value = studentList[index].pass
 }
 
 function removeStudent(index) {
