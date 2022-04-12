@@ -3,7 +3,7 @@ import Creates from "../components/Creates";
 
 const Contain3 = () => {
   return (
-    <div className="contain1">
+    <div className="contain3">
       <Creates
         icon="fa-solid fa-graduation-cap"
         text="EDUCATION"

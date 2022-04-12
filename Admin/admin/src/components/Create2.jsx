@@ -1,11 +1,10 @@
 import React from "react";
 
-const Create2 = ({ text, number }) => {
+const Create2 = ({ text }) => {
   return (
-    <div>
-      <div>
-        <span>{text}</span>
-      </div>
+    <div className="create2">
+      <h2>{text}</h2>
+      <input type="number" />
     </div>
   );
 };
